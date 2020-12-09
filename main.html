@@ -1,0 +1,81 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>SANCHEZ HIGHER SECONDARY SCHOOL</title>
+<style>
+label {
+display: block;
+}
+
+input {
+width: 30px;
+margin-left: 20px;
+}
+
+h2 {
+clear: both;
+padding-top: 20px;
+}
+
+body {
+Background-image: lightblue;
+font-family: Helvetica;
+}
+
+#main {
+width: 80%;
+max-width: 950px;
+border: 1px gray solid;
+margin: auto;
+padding: 10px;
+background-color: white;
+border-radius: 10px;
+}
+
+#header {
+margin-top: 0;
+border: 2px solid black;
+padding: 5px;
+height: 250px;
+background: beige;
+background-image: url("code.jpg");
+color: white;
+}
+</style>
+</head>
+<body>
+<form width = "70%" height = "150%" action="try 2.html">
+ <center> <img src="test.jpeg" width="50" height="50"><h1> TESTPRESS HIGHER SECONDARY SCHOOL<h1> </center>
+<center> <h2> WELCOME TO ONLINE QUIZ </h2> 
+<h4> Choose the section and click on NEXT </h4> <br> <br>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<select id="jaistyleselect" onchange="styleselect()">
+<option value="1">APTITUDE</option>
+<option value="2">GRAMMER </option>
+<option value="3">LOGICAL REASONING </option>
+</select>
+
+<br>
+<br>
+
+<span id="stylediv">Text to display here</span>
+<script> 
+$(window).load(function(){
+ styleselect();
+})
+function styleselect() {
+    if (document.getElementById('jaistyleselect').value == "3") {
+    $("#stylediv").html('<b><a href="logi.html">NEXT</a></b>');
+  } 
+    if (document.getElementById('jaistyleselect').value == "2") {
+    $("#stylediv").html('<b><a href="English copy.html"> NEXT </a></b>');} 
+} 
+    if (document.getElementById('jaistyleselect').value == "1") {
+    $("#stylediv").html('<b> <a href="aptitude.html">NEXT</a></b>');
+} 
+</script>
+</form>
+</body>
+</html>
